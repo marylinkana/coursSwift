@@ -96,7 +96,7 @@ careCommandes.insert("jeep", at: 1)
 //insertion à un index précis
 careCommandes.append("férari")
 
-//afficher tous les élément d'un tableau
+//afficher tous les élément d'un tableau avec un for
 for i in 0 ... careCommandes.count-1 {
     print(careCommandes[i])
 }
@@ -110,9 +110,25 @@ careCommandes.removeLast()
 //Suppression de tous les éléments
 //careCommandes.removeAll(keepingCapacity: false)
 
-//Tableau associatif
+//Tableau associatif : dictionnaire
 var associativeArray = ["Voiture1":"toyota", "Voiture2":"bmw", "Voiture3":"mercedece", "Voiture4":"fiat"]
+
+// Ajout d'un élément
+associativeArray["voiture5"] = "férari"
+
+//Modification d'un élément
+associativeArray["voiture5"] = "jagoire"
+
+//Suppression d'un élément
+associativeArray["voiture5"] = nil
+
+// afficher tous les élément d'un tableau avec un foreach
+associativeArray
 
 for oneElement in associativeArray {
     oneElement
+}
+
+for (key, value) in associativeArray{
+    "\(key) correspond à la marque \(value)"
 }
