@@ -76,7 +76,43 @@ switch niveauVent {
         break;
 }
 
-// Tableau
+// déclaration d'un Tableau
+var careCommandes = ["toyota", "bmw", "mercedece", "fiat"]
+let careCommande = ["toyota", "bmw", "mercedece", "fiat"]
 
 
+// déclaration d'un tableau vide
+let myArray:[String]
 
+// récupération du premier élément
+let firstOne = [0]
+
+// récupération du dernier élément
+let lastOne = careCommandes[careCommandes.count-1]
+
+//Ajout d'un élément en fin d'un tableau
+careCommandes.insert("jeep", at: 1)
+
+//insertion à un index précis
+careCommandes.append("férari")
+
+//afficher tous les élément d'un tableau
+for i in 0 ... careCommandes.count-1 {
+    print(careCommandes[i])
+}
+
+//Suppression du n ième élément ici le 5ième
+careCommandes.remove(at: 2)
+
+//Suppression du dernier élément
+careCommandes.removeLast()
+
+//Suppression de tous les éléments
+//careCommandes.removeAll(keepingCapacity: false)
+
+//Tableau associatif
+var associativeArray = ["Voiture1":"toyota", "Voiture2":"bmw", "Voiture3":"mercedece", "Voiture4":"fiat"]
+
+for oneElement in associativeArray {
+    oneElement
+}
