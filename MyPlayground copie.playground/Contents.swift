@@ -52,7 +52,7 @@ var concatext = "mon pot \(nomDylan) a pour soubriquet \(soubriq) et il l'appré
 var concatInt = nomDylan + " a " ;String(5*5); " ans. "
 print(concatext)
 
-// conversion d'un string en float
+// conversion d'un float en string
 let string2 = NSString(format: "%0.2f", 7.77)
 
 let score2 = ("25" as NSString).intValue
@@ -62,6 +62,21 @@ score2
 var vide = "pas vide"
 vide.isEmpty
 
+// switch
+let niveauVent = 9
+
+switch niveauVent {
+    case 1...3:
+        print("C'est plutôt calme dehors")
+    case 4...6:
+        print("prend ton parapluie")
+    case 7...9:
+        print("Ne tente même pas de sortir")
+    default:
+        break;
+}
+
+// Tableau
 
 
 
