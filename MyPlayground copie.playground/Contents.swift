@@ -156,3 +156,64 @@ switch car1.modele {
     default :
         "le \(car1.country) à pour modele de Ferary : la \(car1.modele.rawValue)"
 }
+
+//Tuple
+var strn = "bonjour"
+var num = 7000
+
+//Déclaration d'un tuple
+let monTuple = (strn, num, 11787, "mon b...")
+let event = (1998, "coupe du monde")
+
+//Récupération des valeur via index
+monTuple.0
+monTuple.1
+
+//utilisation d'une constante étant elle-meme tuplt
+let (year, title) = event
+
+//récupération des valeur
+year
+title
+
+//tuplt typé
+let eventType:(year:Int, title:String) = (1998, "coupe du monde")
+
+//récupération des valeurs du tuple a travers le type de donnée
+eventType.year
+eventType.title
+
+//fonction qui renvoie un tuple
+func currentEvent() -> (year:Int, Title:String) {
+    return (1998, "coupe du monde")
+}
+
+//Récupération des valeur via une fonction
+currentEvent().year
+currentEvent().Title
+
+//tableau de tuplt
+let eventArray = [("coupe du monde", 1998, 1), ("coupe du monde", 2018, 2), ("coupe du monde", 2022, 3) ]
+
+//parcour du tableau et traitement des valeurs
+for event in eventArray{
+    switch event {
+    case ( , ,1):
+        "la france gagne la coupe du monde"
+    case ("",2018,):
+    "la france gagne de nouveau la coupe du monde"
+    case ("",2022,):
+    "la france va gagner la coupe du monde"
+    default:
+        "évènement inconnu"
+    }
+}
+
+var n1 = 10
+var n2 = 25
+
+var temp = n1
+n1 = n2
+n2 = temp
+
+
