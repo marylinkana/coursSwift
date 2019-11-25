@@ -132,3 +132,27 @@ for oneElement in associativeArray {
 for (key, value) in associativeArray{
     "\(key) correspond à la marque \(value)"
 }
+
+//déclaration d'une énumération
+enum CarType : String{
+    case ferary = "bugati", toyota = "corola", dassia = "sundaro"
+}
+
+//Structure d'un film
+struct Car {
+    var country: String
+    var modele: CarType
+}
+
+// Déclaration d'un film en utilisant la structure
+var car1 = Car(country: "Cameroun", modele: .toyota)
+
+//traitement de différent cas grace au controle de switch/case
+switch car1.modele {
+    case .toyota :
+        "le \(car1.country) à pour modele de Toyota : la \(car1.modele.rawValue)"
+    case .dassia :
+        "le \(car1.country) à pour modele de Dassia : la \(car1.modele.rawValue)"
+    default :
+        "le \(car1.country) à pour modele de Ferary : la \(car1.modele.rawValue)"
+}
