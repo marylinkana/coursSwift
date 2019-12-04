@@ -198,11 +198,11 @@ let eventArray = [("coupe du monde", 1998, 1), ("coupe du monde", 2018, 2), ("co
 //parcour du tableau et traitement des valeurs
 for event in eventArray{
     switch event {
-    case ( , ,1):
+    case ("",1998,1):
         "la france gagne la coupe du monde"
-    case ("",2018,):
+    case ("",2018,2):
     "la france gagne de nouveau la coupe du monde"
-    case ("",2022,):
+    case ("",2022,3):
     "la france va gagner la coupe du monde"
     default:
         "évènement inconnu"
