@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet var champNom: UITextField!
+    
+    @IBOutlet var champPrenom: UITextField!
+    
+    @IBOutlet var champPassword: UITextField!
+    
+    @IBOutlet var champResultat: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
