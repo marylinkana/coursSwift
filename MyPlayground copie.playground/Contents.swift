@@ -248,4 +248,10 @@ let des:[String] = ["⚀","⚁","⚂","⚃","⚄","⚅"];
 //afficher les dés de façons alléatoire
 print(des[Int(arc4random_uniform(UInt32(des.count)))]);
 
+//mettre des dés dans un tableau
+let liste:[String] = ["1","2","3","4","5","6"];
+
+//afficher les élément du tableau de façons alléatoire
+print(liste.randomElement());
+
 
