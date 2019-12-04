@@ -193,20 +193,21 @@ currentEvent().year
 currentEvent().Title
 
 //tableau de tuplt
-let eventArray = [("coupe du monde", 1998, 1), ("coupe du monde", 2018, 2), ("coupe du monde", 2022, 3) ]
+let eventArray = [("coupe du monde",1998,1), ("coupe du monde",2018,2), ("coupe du monde",2022,3)]
 
 //parcour du tableau et traitement des valeurs
 for event in eventArray{
     switch event {
-    case ( "a", 2,1):
-        "la france gagne la coupe du monde"
-    case ("a", 2,1):
-    "la france gagne de nouveau la coupe du monde"
-    case ("a", 2,1):
-    "la france va gagner la coupe du monde"
+    case ("Coupe du monde",1998,1):
+        print("La france gagne la coupe du monde");
+    case ("Coupe du monde",2018,2):
+        print("La france gagne de nouveau la coupe du monde");
+    case ("Coupe du monde",2022,3):
+        print("La france va gagner la coupe du monde");
     default:
-        "évènement inconnu"
+        print("Evènement inconnu");
     }
+    print("On est les champion");
 }
 
 var n1 = 10
