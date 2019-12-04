@@ -238,5 +238,14 @@ var c = 2.5;
 var cast = a * Int(c);
 print(cast);
 
+var altr = 6;
+//génère un nombre aléatoire a prtir de la valeur passé en paramettre
+Int(arc4random_uniform(UInt32(altr)));
+
+//mettre des dés dans un tableau
+let des:[String] = ["⚀","⚁","⚂","⚃","⚄","⚅"];
+
+//afficher les dés de façons alléatoire
+print(des[Int(arc4random_uniform(UInt32(des.count)))]);
 
 
