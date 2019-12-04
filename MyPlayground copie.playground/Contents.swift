@@ -193,20 +193,21 @@ currentEvent().year
 currentEvent().Title
 
 //tableau de tuplt
-let eventArray = [("coupe du monde", 1998, 1), ("coupe du monde", 2018, 2), ("coupe du monde", 2022, 3) ]
+let eventArray = [("coupe du monde",1998,1), ("coupe du monde",2018,2), ("coupe du monde",2022,3)]
 
 //parcour du tableau et traitement des valeurs
 for event in eventArray{
     switch event {
-    case ("",1998,1):
-        "la france gagne la coupe du monde"
-    case ("",2018,2):
-    "la france gagne de nouveau la coupe du monde"
-    case ("",2022,3):
-    "la france va gagner la coupe du monde"
+    case ("Coupe du monde",1998,1):
+        print("La france gagne la coupe du monde");
+    case ("Coupe du monde",2018,2):
+        print("La france gagne de nouveau la coupe du monde");
+    case ("Coupe du monde",2022,3):
+        print("La france va gagner la coupe du monde");
     default:
-        "évènement inconnu"
+        print("Evènement inconnu");
     }
+    print("On est les champion");
 }
 
 var n1 = 10
@@ -216,4 +217,40 @@ var temp = n1
 n1 = n2
 n2 = temp
 
+/* TP CALCULATRICE */
 
+var a = 10;
+var b = 5;
+
+var add = a + b;
+print(add);
+
+var sous = a - b;
+print(sous);
+
+var div = a / b;
+print(div);
+
+var mult = a * b;
+print(mult);
+
+var c = 2.5;
+
+var cast = a * Int(c);
+print(cast);
+
+var altr = 6;
+//génère un nombre aléatoire a prtir de la valeur passé en paramettre
+Int(arc4random_uniform(UInt32(altr)));
+
+//mettre des dés dans un tableau
+let des:[String] = ["⚀","⚁","⚂","⚃","⚄","⚅"];
+
+//afficher les dés de façons alléatoire
+print(des[Int(arc4random_uniform(UInt32(des.count)))]);
+
+//mettre des dés dans un tableau
+let liste:[String] = ["1","2","3","4","5","6"];
+
+//afficher les élément du tableau de façons alléatoire
+print(liste.randomElement());
