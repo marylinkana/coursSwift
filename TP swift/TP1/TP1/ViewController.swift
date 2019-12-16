@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func validate(_ sender: Any) {
-        
         let recieveNom = champNom.text
         let recievePrenom = champPrenom.text
         let recieveEmail = champEmail.text
@@ -38,14 +37,16 @@ class ViewController: UIViewController {
         
         var message = ""
         
-        /*if Int(recieveAge) >= 18 {
-            message = "Connexion réussit 👍 \n Bienvenue 🤝 Mr/Mme \(recieveNom!) \(recievePrenom!). \n Votre mot de passe est \(recievePassword!)"
+        let ageNumber = Int(recieveAge!)
+        
+        if ageNumber! >= 18 {
+            message = "Connexion réussit 👍 \n Bienvenue 🤝 Mr/Mme \(recieveNom!) \(recievePrenom!). \n Votre email est : \(String(describing: recieveEmail)) mot de passe est \(recievePassword!)"
         }
         else{
             message = "Echec de connexion ⚠️ Age requis non respecté."
-        }*/
+        }
         
-        message = "Connexion réussit 👍 \n Bienvenue 🤝 Mr/Mme \(recieveNom!) \(recievePrenom!). \n Votre mot de passe est \(recievePassword!)"
+        /*message = "Connexion réussit 👍 \n Bienvenue 🤝 Mr/Mme \(recieveNom!) \(recievePrenom!). \n Votre mot de passe est \(recievePassword!)"*/
         
         
         resultMessage.text = message
