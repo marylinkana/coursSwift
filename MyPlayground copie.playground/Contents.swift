@@ -254,3 +254,74 @@ let liste:[String] = ["1","2","3","4","5","6"];
 
 //afficher les élément du tableau de façons alléatoire
 print(liste.randomElement());
+
+/*
+ PROGRAMMATION ORIENTE OBJET
+ */
+
+ //CREATION DE CLASSE
+
+class Vehicule{
+    
+    // Propriété et attribut
+    var couleur:UIColor
+    var modele:String
+    var nbSiefes:Int = 4
+    var nbPortes:Int = 4
+    
+    //Initialisation (constructeur)
+    init(couleur:UIColor , modele:String) {
+        self.couleur = couleur
+        self.modele = modele
+    }
+    
+    //Création des méthode (fonction)
+    func demarrer(){
+        print("Démarrage du véhicule en cours ...")
+    }
+    
+    func arreter(){
+        print("Arret du véhicule en cours ...")
+    }
+    
+    func reparer(){
+        print("Réparage du véhicule en cours ...")
+    }
+    
+    func desc(){
+        print("Voiture de type : \(self.modele) \n Couleur : \(couleur) \n Nombre de place : \(nbSiefes) \n Nombre de porte \(nbPortes)")
+    }
+    
+    // changer la couleur
+    func changeColor(color:UIColor) -> String {
+        self.couleur = color
+        
+        var newColor:String?
+        switch color {
+            case .red :
+                newColor = "rouge"
+            case .blue :
+                newColor = "bleu"
+            case .green :
+                newColor = "vert"
+            case .purple :
+                newColor = "violet"
+            case .red :
+                newColor = "rouge"
+            default:
+                newColor = ""
+        }
+        return newColor!
+    }
+    
+}
+
+// Main
+var toyota = Vehicule(couleur: UIColor.red, modele: "Toyota")
+toyota.desc()
+toyota.desc()
+toyota.demarrer()
+toyota.arreter()
+toyota.changeColor(color : UIColor.blue)
+toyota.reparer()
+toyota.desc()
