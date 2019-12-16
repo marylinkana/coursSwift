@@ -253,7 +253,7 @@ print(des[Int(arc4random_uniform(UInt32(des.count)))]);
 let liste:[String] = ["1","2","3","4","5","6"];
 
 //afficher les élément du tableau de façons alléatoire
-print(liste.randomElement());
+print(liste.randomElement() ?? "");
 
 /*
  PROGRAMMATION ORIENTE OBJET
@@ -275,6 +275,13 @@ class Vehicule{
         self.modele = modele
     }
     
+    //Déinitialisation de l'objet
+    deinit {
+        // exemple code de nétoyage
+        self.nbSiefes = 0
+        self.nbPortes = 0
+    }
+    
     //Création des méthode (fonction)
     func demarrer(){
         print("Démarrage du véhicule en cours ...")
@@ -289,7 +296,7 @@ class Vehicule{
     }
     
     func desc(){
-        print("Voiture de type : \(self.modele) \n Couleur : \(couleur) \n Nombre de place : \(nbSiefes) \n Nombre de porte \(nbPortes)")
+        print("Voiture de type : \(self.modele) \n Couleur : \(self.couleur) \n Nombre de place : \(nbSiefes) \n Nombre de porte \(nbPortes)")
     }
     
     // changer la couleur
@@ -312,6 +319,14 @@ class Vehicule{
                 newColor = ""
         }
         return newColor!
+    }
+    
+}
+
+class Course : Vehicule {
+    var type : String
+    
+    override init(){
     }
     
 }
