@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Restauration" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="v1_ico1" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Menu-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Restauration" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="v1_ico2" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Panier-->
         <scene sceneID="Zqi-bz-PMT">
             <objects>
                 <viewController id="l39-OZ-rwD" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6l7-M5-B7O"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HFH-Ut-9pe"/>
+                    <tabBarItem key="tabBarItem" title="Panier" image="v1_ico3" id="HFH-Ut-9pe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozv-nO-f4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,7 +151,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kYN-08-1kH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XZH-OA-gzq"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="v1_ico4" id="XZH-OA-gzq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sc-Ac-GdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +159,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="v1_ico1" width="25.5" height="22"/>
+        <image name="v1_ico2" width="16" height="22"/>
+        <image name="v1_ico3" width="22.5" height="22"/>
+        <image name="v1_ico4" width="19.5" height="22"/>
     </resources>
 </document>
