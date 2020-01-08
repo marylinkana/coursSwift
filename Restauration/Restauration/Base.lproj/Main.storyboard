@@ -60,14 +60,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v1_fond" translatesAutoresizingMaskIntoConstraints="NO" id="fZg-2o-Jjm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IP-Q2-jiH">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IP-Q2-jiH">
                                 <rect key="frame" x="20" y="467" width="374" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v1_menu" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-7I-4lM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v1_menu" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-7I-4lM">
                                         <rect key="frame" x="8" y="8" width="91" height="24.500000000000007"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-fz-IvY">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-fz-IvY">
                                         <rect key="frame" x="8" y="74" width="358" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategorie" id="rUP-GG-eZZ">
@@ -76,6 +79,16 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rUP-GG-eZZ" id="LoT-Jv-6fV">
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v1_btn1" translatesAutoresizingMaskIntoConstraints="NO" id="Kln-PO-hql">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v1_btn2" translatesAutoresizingMaskIntoConstraints="NO" id="6wk-Wj-ler">
+                                                            <rect key="frame" x="332" y="11" width="26" height="22"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -84,21 +97,12 @@
                                             <outlet property="delegate" destination="8rJ-Kc-sve" id="cKD-TR-We9"/>
                                         </connections>
                                     </tableView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SS-Hb-DKW">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SS-Hb-DKW">
                                         <rect key="frame" x="8" y="8" width="109" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="8SS-Hb-DKW" firstAttribute="top" secondItem="5IP-Q2-jiH" secondAttribute="top" constant="8" id="7dM-cW-RGT"/>
-                                    <constraint firstItem="Tdj-7I-4lM" firstAttribute="top" secondItem="5IP-Q2-jiH" secondAttribute="top" constant="8" id="DHJ-P8-vMi"/>
-                                    <constraint firstItem="Tdj-7I-4lM" firstAttribute="leading" secondItem="5IP-Q2-jiH" secondAttribute="leading" constant="8" id="GD7-Ah-Ywb"/>
-                                    <constraint firstAttribute="bottom" secondItem="T6d-fz-IvY" secondAttribute="bottom" constant="8" id="IgA-dv-AAQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="T6d-fz-IvY" secondAttribute="trailing" constant="8" id="Rle-RS-uLF"/>
-                                    <constraint firstItem="T6d-fz-IvY" firstAttribute="top" secondItem="8SS-Hb-DKW" secondAttribute="bottom" constant="19" id="V5s-wb-FZ9"/>
-                                    <constraint firstItem="8SS-Hb-DKW" firstAttribute="leading" secondItem="5IP-Q2-jiH" secondAttribute="leading" constant="8" id="X13-VC-jGE"/>
-                                    <constraint firstItem="T6d-fz-IvY" firstAttribute="leading" secondItem="5IP-Q2-jiH" secondAttribute="leading" constant="8" id="cBJ-ni-5GU"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -274,6 +278,8 @@
     </scenes>
     <resources>
         <image name="v0_fondcomplet1-1" width="320" height="568"/>
+        <image name="v1_btn1" width="231.5" height="25"/>
+        <image name="v1_btn2" width="6" height="8.5"/>
         <image name="v1_fond" width="320" height="524"/>
         <image name="v1_ico1" width="25.5" height="22"/>
         <image name="v1_ico2" width="16" height="22"/>

@@ -29,13 +29,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return arrayCategories.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellule = tableView.dequeueReusableCell(withIdentifier: "cellCategorie", for: indexPath)
-        
-        cellule.textLabel?.text = "Item \(indexPath.row)"
+        let nomCategorie = arrayCategories[indexPath.row]["nomc"]
+        cellule.textLabel?.text = nomCategorie
         
         return cellule
     }
