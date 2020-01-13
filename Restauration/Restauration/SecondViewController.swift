@@ -33,8 +33,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellule = tableView.dequeueReusableCell(withIdentifier: "cellCategorie", for: indexPath)
+        let cellule = tableView.dequeueReusableCell(withIdentifier: "cellCategorie", for: indexPath) as! CategorieTableViewCell
+        
         let nomCategorie = arrayCategories[indexPath.row]["nomc"]
+        
+        cellule.nomCatCell.text = nomCategorie
+        
         cellule.textLabel?.text = nomCategorie
         
         return cellule

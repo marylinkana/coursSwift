@@ -1,16 +1,17 @@
 //
-//  CcategorieTableViewCell.swift
+//  CategorieTableViewCell.swift
 //  Restauration
 //
-//  Created by Administrateur on 08/01/2020.
+//  Created by Administrateur on 13/01/2020.
 //  Copyright © 2020 Administrateur. All rights reserved.
 //
 
 import UIKit
 
-class CcategorieTableViewCell: UITableViewCell {
+class CategorieTableViewCell: UITableViewCell {
 
     @IBOutlet var nomCatCell: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
