@@ -45,11 +45,15 @@ class ViewController: UIViewController {
             }
             //subs
             else if sender.tag == 14{
+                label.text = "+";
+            }
+            //addition
+            else if sender.tag == 15{
                 label.text = "-";
             }
-            //add
-            else if sender.tag == 15{
-                label.text = "+";
+            //modulo
+            else if sender.tag == 17{
+                label.text = "%";
             }
             
             oper = sender.tag
@@ -63,11 +67,15 @@ class ViewController: UIViewController {
                 label.text = String(prevNumber * number)
             }
             else if oper == 14 {
-                label.text = String(prevNumber - number)
-            }
-            else if oper == 15 {
                 label.text = String(prevNumber + number)
             }
+            else if oper == 15 {
+                label.text = String(prevNumber - number)
+            }
+            else if oper == 17 {
+                label.text = String(prevNumber .truncatingRemainder(dividingBy: number))
+            }
+            
         }
         else if sender.tag == 11
         {

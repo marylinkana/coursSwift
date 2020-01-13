@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF3EFBCE-DB1F-4B17-B441-CBBD85453DFD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49B5C8E7-E58A-4DD6-BB87-B428157F1125"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Calculatrice Baudoin/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Calculatrice Baudoin/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - aadda4af570d43d6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.number.getter : Swift.Double"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - ab859ec226e3a3ae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.number.setter : Swift.Double"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - 18d56b712333ebcc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.number.modify : Swift.Double"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - 7a1ab1d2b04ae52d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.number.modify : Swift.Double with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - 7db52d314fad00b3"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Calculatrice_Baudoin.ViewController"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "2B53ABAB-290E-46E0-9238-55CE437FCB41 - 73a1681159cec7f7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculatrice_Baudoin.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Calculatrice_Baudoin.ViewController&gt;"
+                  moduleName = "Calculatrice Baudoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrateur/Documents/GitHub/coursSwift/Calculatrice%20Baudoin/Calculatrice%20Baudoin/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
