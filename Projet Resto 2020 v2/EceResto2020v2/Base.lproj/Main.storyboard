@@ -239,10 +239,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descCellP" destination="gXP-Dt-e7T" id="271-0X-lyJ"/>
-                                    <outlet property="imageCell" destination="GFH-PY-dyl" id="tYb-jV-srJ"/>
+                                    <outlet property="PrixCellP" destination="eA7-fe-0kN" id="JJi-Q1-Exz"/>
+                                    <outlet property="archiveCellP" destination="GFH-PY-dyl" id="cDj-6d-H8O"/>
+                                    <outlet property="descCellP" destination="gXP-Dt-e7T" id="EfQ-Ro-Msx"/>
                                     <outlet property="prixCellP" destination="eA7-fe-0kN" id="FNo-iS-1UK"/>
-                                    <outlet property="titreCellP" destination="6nq-4Z-DL0" id="B6E-wP-hSh"/>
+                                    <outlet property="titreCellP" destination="6nq-4Z-DL0" id="Ck5-Uq-q3V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

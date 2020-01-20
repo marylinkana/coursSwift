@@ -9,13 +9,12 @@
 import UIKit
 
 class CustomCellPlatsTableViewCell: UITableViewCell {
+
     
-    @IBOutlet var imageCell: UIImageView!
-    @IBOutlet var titreCellP: UILabel!
-    @IBOutlet var descCellP: UILabel!
     @IBOutlet var prixCellP: UILabel!
-    
-    
+    @IBOutlet var descCellP: UILabel!
+    @IBOutlet var titreCellP: UILabel!
+    @IBOutlet var archiveCellP: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

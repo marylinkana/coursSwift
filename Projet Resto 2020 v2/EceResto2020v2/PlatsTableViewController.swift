@@ -10,9 +10,20 @@ import UIKit
 
 class PlatsTableViewController: UITableViewController {
 
+    var arrayPlats = [[String:String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         confNavBar()
+        
+        let plat1 = ["prix_plat":"10","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade au caviar", "archive_plat":"salade1.jpeg"]
+        
+        let plat2 = ["prix":"10","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade d'avocat", "archive_plat":"salade1.jpeg"]
+        
+        let plat3 = ["prix":"10","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade de crevette", "archive_plat":"salade1.jpeg"]
+        
+    arrayPlats = [plat1,plat2,plat3,plat3,plat1,plat2,plat3,plat3,plat1,plat2,plat3,plat3]
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -44,16 +55,25 @@ class PlatsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 12
+        // taille du tableau en fonction du nombre de produit
+        return arrayPlats.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath) as! CustomCellPlatsTableViewCell
 
-        // Configure the cell...
-        cell.titreCellP.text = ""
+        // afficher les infos sur le plats depuis le tableau arrayPlats
+        let nomP = arrayPlats[indexPath.row]["nom_plat"]
+        let descP = arrayPlats[indexPath.row]["desc_plat"]
+        let prixP = arrayPlats[indexPath.row]["prix_plat"]
+        let archiveP = arrayPlats[indexPath.row]["archive_plat"]{
+            cell.archiveCellP.image = UIImage(named: archiveP)
+        }
+
+        cell.titreCellP.text = nomP
+        cell.descCellP.text = descP
+        cell.prixCellP.text = prixP
 
         return cell
     }
