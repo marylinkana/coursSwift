@@ -12,7 +12,7 @@ class PlatsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        confNavBar()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -21,7 +21,8 @@ class PlatsTableViewController: UITableViewController {
     }
     
     func confNavBar(){
-       //Affiche d'une barre de navigation self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "v2_barre_titre"), for: .default)
+       //Affiche d'une barre de navigation
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "v2_barre_titre"), for: .default)
         
         //affiche un logo
         let logo = UIImage(named: "v2_logo")
