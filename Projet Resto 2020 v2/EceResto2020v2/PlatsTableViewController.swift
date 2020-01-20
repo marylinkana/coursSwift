@@ -50,10 +50,10 @@ class PlatsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath) as! CustomCellPlatsTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = ""
+        cell.titreCellP.text = ""
 
         return cell
     }
