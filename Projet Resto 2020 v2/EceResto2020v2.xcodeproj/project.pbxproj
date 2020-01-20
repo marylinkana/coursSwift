@@ -15,6 +15,7 @@
 		816762C723C5C4E5006100CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816762C523C5C4E5006100CA /* LaunchScreen.storyboard */; };
 		816762CF23C5EBA7006100CA /* CategorieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */; };
 		B42E21A223CC7421000CCC9D /* PlatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E21A123CC7421000CCC9D /* PlatsTableViewController.swift */; };
+		B4D14B0923D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D14B0823D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		816762C823C5C4E5006100CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieTableViewCell.swift; sourceTree = "<group>"; };
 		B42E21A123CC7421000CCC9D /* PlatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatsTableViewController.swift; sourceTree = "<group>"; };
+		B4D14B0823D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellPlatsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				816762C023C5C4E3006100CA /* Main.storyboard */,
 				816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */,
 				B42E21A123CC7421000CCC9D /* PlatsTableViewController.swift */,
+				B4D14B0823D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift */,
 				816762C323C5C4E5006100CA /* Assets.xcassets */,
 				816762C523C5C4E5006100CA /* LaunchScreen.storyboard */,
 				816762C823C5C4E5006100CA /* Info.plist */,
@@ -147,6 +150,7 @@
 				816762BF23C5C4E3006100CA /* SecondViewController.swift in Sources */,
 				816762CF23C5EBA7006100CA /* CategorieTableViewCell.swift in Sources */,
 				B42E21A223CC7421000CCC9D /* PlatsTableViewController.swift in Sources */,
+				B4D14B0923D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift in Sources */,
 				816762BB23C5C4E3006100CA /* AppDelegate.swift in Sources */,
 				816762BD23C5C4E3006100CA /* FirstViewController.swift in Sources */,
 			);

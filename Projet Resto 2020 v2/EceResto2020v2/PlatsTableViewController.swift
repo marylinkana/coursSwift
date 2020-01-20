@@ -53,7 +53,7 @@ class PlatsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "Sauce aux caramels"
+        cell.textLabel?.text = ""
 
         return cell
     }
