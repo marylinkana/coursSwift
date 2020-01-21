@@ -11,13 +11,15 @@ import UIKit
 class PlatsTableViewController: UITableViewController {
 
     var arrayPlats = [[String:String]]()
-    
+    var parametre1 = [String:String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Afficher la navbar de la fonction confNavBar
         confNavBar()
         
         // Accès à la table Plats
+        let idCategorie = parametre1["id_categorie"]
         arrayPlats = DataBase().executerSelect("SELECT * FROM plats_nourriture WHERE id_categorie = 1") as! [[String : String]]
         
 //        let plat1 = ["prix_plat" : "10.00", "nom_plat" : "Salade", "id_categorie" : "1", "id_plat" : "1", "description_plat" : "Salade avec sauce vinaigrette", "archive_plat" : "salade1.jpg"]

@@ -10,7 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var tableCategorie: UITableView!
+    
     var arrayCategories = [[String:String]]()
+    var parametre1 = [String:String]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,5 +51,18 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cellule.nomCatCell.text = nomCategorie
         
         return cellule
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        //Get the new controller using segue.designationViewController
+        if segue.identifier == "categoerie2Plats"{
+            
+            let indexPath = self.tableCategorie.indexPathsForSelectedRows
+            
+            let categorieSelection = arrayCategories[indexPath.row]
+            
+            let objVDestination = segue.destination as! PlatsTableViewController
+            objVDestination.parametre1 = categorieSelection
+        }
     }
 }
