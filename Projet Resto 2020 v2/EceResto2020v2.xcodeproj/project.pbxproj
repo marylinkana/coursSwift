@@ -15,6 +15,8 @@
 		816762C723C5C4E5006100CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816762C523C5C4E5006100CA /* LaunchScreen.storyboard */; };
 		816762CF23C5EBA7006100CA /* CategorieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */; };
 		B409204B23D7336C00386372 /* DescPlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409204A23D7336C00386372 /* DescPlatTableViewController.swift */; };
+		B409205023D745F600386372 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B409204D23D745F600386372 /* DataBase.m */; };
+		B409205123D745F600386372 /* PlatsBD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B409204E23D745F600386372 /* PlatsBD.sqlite */; };
 		B42E21A223CC7421000CCC9D /* PlatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E21A123CC7421000CCC9D /* PlatsTableViewController.swift */; };
 		B4D14B0923D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D14B0823D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,10 @@
 		816762C823C5C4E5006100CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieTableViewCell.swift; sourceTree = "<group>"; };
 		B409204A23D7336C00386372 /* DescPlatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescPlatTableViewController.swift; sourceTree = "<group>"; };
+		B409204C23D745F500386372 /* EceResto2020v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EceResto2020v2-Bridging-Header.h"; sourceTree = "<group>"; };
+		B409204D23D745F600386372 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataBase.m; path = "../../../../../Desktop/A Swift/DataBase.m"; sourceTree = "<group>"; };
+		B409204E23D745F600386372 /* PlatsBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PlatsBD.sqlite; path = "../../../../../Desktop/A Swift/PlatsBD.sqlite"; sourceTree = "<group>"; };
+		B409204F23D745F600386372 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataBase.h; path = "../../../../../Desktop/A Swift/DataBase.h"; sourceTree = "<group>"; };
 		B42E21A123CC7421000CCC9D /* PlatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatsTableViewController.swift; sourceTree = "<group>"; };
 		B4D14B0823D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellPlatsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +70,9 @@
 		816762B923C5C4E3006100CA /* EceResto2020v2 */ = {
 			isa = PBXGroup;
 			children = (
+				B409204F23D745F600386372 /* DataBase.h */,
+				B409204D23D745F600386372 /* DataBase.m */,
+				B409204E23D745F600386372 /* PlatsBD.sqlite */,
 				816762BA23C5C4E3006100CA /* AppDelegate.swift */,
 				816762BC23C5C4E3006100CA /* FirstViewController.swift */,
 				816762BE23C5C4E3006100CA /* SecondViewController.swift */,
@@ -75,6 +84,7 @@
 				816762C523C5C4E5006100CA /* LaunchScreen.storyboard */,
 				816762C823C5C4E5006100CA /* Info.plist */,
 				B409204A23D7336C00386372 /* DescPlatTableViewController.swift */,
+				B409204C23D745F500386372 /* EceResto2020v2-Bridging-Header.h */,
 			);
 			path = EceResto2020v2;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 				TargetAttributes = {
 					816762B623C5C4E3006100CA = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -137,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B409205123D745F600386372 /* PlatsBD.sqlite in Resources */,
 				816762C723C5C4E5006100CA /* LaunchScreen.storyboard in Resources */,
 				816762C423C5C4E5006100CA /* Assets.xcassets in Resources */,
 				816762C223C5C4E3006100CA /* Main.storyboard in Resources */,
@@ -152,6 +164,7 @@
 			files = (
 				B409204B23D7336C00386372 /* DescPlatTableViewController.swift in Sources */,
 				816762BF23C5C4E3006100CA /* SecondViewController.swift in Sources */,
+				B409205023D745F600386372 /* DataBase.m in Sources */,
 				816762CF23C5EBA7006100CA /* CategorieTableViewCell.swift in Sources */,
 				B42E21A223CC7421000CCC9D /* PlatsTableViewController.swift in Sources */,
 				B4D14B0923D5AC6500906E9E /* CustomCellPlatsTableViewCell.swift in Sources */,
@@ -302,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J7Z9H5SSH;
 				INFOPLIST_FILE = EceResto2020v2/Info.plist;
@@ -311,6 +325,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gc.EceResto2020v2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EceResto2020v2/EceResto2020v2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J7Z9H5SSH;
 				INFOPLIST_FILE = EceResto2020v2/Info.plist;
@@ -329,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gc.EceResto2020v2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EceResto2020v2/EceResto2020v2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
