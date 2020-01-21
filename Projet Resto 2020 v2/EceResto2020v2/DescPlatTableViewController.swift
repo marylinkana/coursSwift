@@ -1,84 +1,46 @@
 //
-//  PlatsTableViewController.swift
+//  DescPlatTableViewController.swift
 //  EceResto2020v2
 //
-//  Created by Administrateur on 13/01/2020.
+//  Created by Administrateur on 21/01/2020.
 //  Copyright © 2020 Gian. All rights reserved.
 //
 
 import UIKit
 
-class PlatsTableViewController: UITableViewController {
+class DescPlatTableViewController: UITableViewController {
 
-    var arrayPlats = [[String:String]]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        confNavBar()
-        
-        let plat1 = ["prix_plat":"30","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade au caviar", "archive_plat":"salade1.jpeg"]
-        
-        let plat2 = ["prix_plat":"15","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade d'avocat", "archive_plat":"salade1.jpeg"]
-        
-        let plat3 = ["prix_plat":"10","nom_plat":"Salade", "id_cat":"1", "id_plat":"1", "desc_plat":"Salade de crevette", "archive_plat":"salade1.jpeg"]
-        
-    arrayPlats = [plat1,plat2,plat3,plat3,plat1,plat2,plat3,plat3,plat1,plat2,plat3,plat3]
-        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    func confNavBar(){
-       //Affiche d'une barre de navigation
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "v2_barre_titre"), for: .default)
-        
-        //affiche un logo
-        let logo = UIImage(named: "v2_logo")
-        self.navigationItem.titleView = UIImageView(image:logo)
-        
-        //boutton de retour en arière
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style:.plain, target: nil, action: nil)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // taille du tableau en fonction du nombre de produit
-        return arrayPlats.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath) as! CustomCellPlatsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // afficher les infos sur le plats depuis le tableau arrayPlats
-        let nomP = arrayPlats[indexPath.row]["nom_plat"]
-        let descP = arrayPlats[indexPath.row]["desc_plat"]
-        let prixP = arrayPlats[indexPath.row]["prix_plat"]
-        
-        if let archiveP = arrayPlats[indexPath.row]["archive_plat"]{
-            cell.archiveCellP.image = UIImage(named: archiveP)
-        }
-
-        cell.titreCellP.text = nomP
-        cell.descCellP.text = descP
-        cell.prixCellP.text = prixP
+        // Configure the cell...
 
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
