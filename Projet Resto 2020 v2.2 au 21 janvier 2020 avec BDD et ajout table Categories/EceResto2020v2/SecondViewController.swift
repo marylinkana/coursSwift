@@ -14,13 +14,20 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let c1 = ["idc":"1","nomc":"Entrées"]
-        let c2 = ["idc":"2","nomc":"Plats"]
-        let c3 = ["idc":"3","nomc":"Soupes"]
-        let c4 = ["idc":"4","nomc":"Desserts"]
-        let c5 = ["idc":"5","nomc":"Boissons"]
+        
+        // Connexion à la bdd sqlite
+        DataBase.checkAndCreateDatabase()
+        
+        // Accès à la table Categories
+        arrayCategories = DataBase().executerSelect("SELECT * FROM categorie_plats") as! [[String : String]]
+        
+        //let c1 = ["idc":"1","nomc":"Entrées"]
+        //let c2 = ["idc":"2","nomc":"Plats"]
+        //let c3 = ["idc":"3","nomc":"Soupes"]
+        //let c4 = ["idc":"4","nomc":"Desserts"]
+        //let c5 = ["idc":"5","nomc":"Boissons"]
 
-    arrayCategories = [c1, c2, c3, c4, c5]
+       // arrayCategories = [c1, c2, c3, c4, c5]
         
     }
     
@@ -34,7 +41,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellule = tableView.dequeueReusableCell(withIdentifier: "cellCategorie", for: indexPath) as! CategorieTableViewCell
-        let nomCategorie = arrayCategories[indexPath.row]["nomc"]
+        let nomCategorie = arrayCategories[indexPath.row]["nom_categorie"]
         
         // cellule.textLabel?.text = nomCategorie
         cellule.nomCatCell.text = nomCategorie

@@ -1,17 +1,28 @@
 //
-//  DescPlatTableViewController.swift
+//  PlatsTableViewController.swift
 //  EceResto2020v2
 //
-//  Created by Administrateur on 21/01/2020.
+//  Created by Gian on 13/01/2020.
 //  Copyright © 2020 Gian. All rights reserved.
 //
 
 import UIKit
 
-class DescPlatTableViewController: UITableViewController {
+class PlatsTableViewController: UITableViewController {
 
+    var arrayPlats = [[String:String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Afficher la navbar de la fonction confNavBar
+        confNavBar()
+        
+        // Accès à la table Plats
+        arrayPlats = DataBase().executerSelect("SELECT * FROM plats_nourriture WHERE id_categorie = 1") as! [[String : String]]
+        
+//        let plat1 = ["prix_plat" : "10.00", "nom_plat" : "Salade", "id_categorie" : "1", "id_plat" : "1", "description_plat" : "Salade avec sauce vinaigrette", "archive_plat" : "salade1.jpg"]
+//        
+//        arrayPlats = [plat1,plat1,plat1,plat1,plat1,plat1,plat1,plat1,plat1,plat1,plat1,plat1]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,28 +30,56 @@ class DescPlatTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    func confNavBar(){
+        //Affichage d'un bandeau image en haut de la view
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "v2_barre_titre"), for: .default)
+        
+        //Affichage d'un logo logo
+        let logo = UIImage(named: "v2_logo")
+        self.navigationItem.titleView = UIImageView(image:logo)
+        
+        // Bouton de retour en arrière
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:" ", style:.plain, target:nil, action:nil)
+
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        // Taille du tableau en fonction du nombre de produits de la catégorie concernée
+        return arrayPlats.count
     }
 
-    /*
+        // Fonction pour faire la liaison entre la view et le fichier  CustomCellPlatsTableViewCell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlats", for: indexPath) as! CustomCellPlatsTableViewCell
 
-        // Configure the cell...
+        // Afficher les données des plats depuis le tableau arrayPlats
+        let nomP = arrayPlats[indexPath.row]["nom_plat"]
+        let descriptionP = arrayPlats[indexPath.row]["description_plat"]
+        let prixP = arrayPlats[indexPath.row]["prix_plat"]
+        
+        if let archiveP = arrayPlats[indexPath.row]["archive_plat"] {
+        cell.imageCell.image = UIImage(named : archiveP)
+        }
+        
+        cell.titreCellP.text = nomP
+        cell.descriptionCellP.text = descriptionP
+        cell.prixCellP.text = prixP
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -52,7 +91,7 @@ class DescPlatTableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
