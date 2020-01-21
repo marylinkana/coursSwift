@@ -273,7 +273,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salade1" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-7F-1ny">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-7F-1ny">
                                                     <rect key="frame" x="16" y="11" width="343" height="162"/>
                                                 </imageView>
                                             </subviews>
@@ -488,7 +488,6 @@
     </scenes>
     <resources>
         <image name="ajidegallina" width="800" height="600"/>
-        <image name="salade1" width="280" height="180"/>
         <image name="v0_fondcomplet1-1" width="320" height="568"/>
         <image name="v1_btn1" width="231.5" height="25"/>
         <image name="v1_btn2" width="6" height="8.5"/>
