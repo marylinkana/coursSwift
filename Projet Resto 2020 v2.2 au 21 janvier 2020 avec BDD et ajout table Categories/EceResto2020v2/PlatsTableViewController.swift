@@ -19,8 +19,13 @@ class PlatsTableViewController: UITableViewController {
         confNavBar()
         
         // Accès à la table Plats
-        let idCategorie = parametre1["id_categorie"]
-        arrayPlats = DataBase().executerSelect("SELECT * FROM plats_nourriture WHERE id_categorie = 1") as! [[String : String]]
+        if let idCategorie = parametre1["id_categorie"]{
+            //        arrayPlats = DataBase().executerSelect("SELECT * FROM plats_nourriture WHERE id_categorie = \(idCategorie)") as! [[String : String]]
+            let query = "SELECT * FROM plats_nourriture WHERE id_categorie = \(idCategorie)"
+            print (query)
+            arrayPlats = DataBase().executerSelect(query) as! [[String:String]]
+        }
+        
         
 //        let plat1 = ["prix_plat" : "10.00", "nom_plat" : "Salade", "id_categorie" : "1", "id_plat" : "1", "description_plat" : "Salade avec sauce vinaigrette", "archive_plat" : "salade1.jpg"]
 //        

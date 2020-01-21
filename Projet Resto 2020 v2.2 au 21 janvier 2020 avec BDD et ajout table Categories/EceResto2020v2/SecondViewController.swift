@@ -13,7 +13,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var tableCategorie: UITableView!
     
     var arrayCategories = [[String:String]]()
-    var parametre1 = [String:String]()
+    //var parametre1 = [String:String]()
 
 
     override func viewDidLoad() {
@@ -55,14 +55,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){
         //Get the new controller using segue.designationViewController
-        if segue.identifier == "categoerie2Plats"{
+        if segue.identifier == "categorie2Plats"{
             
-            let indexPath = self.tableCategorie.indexPathsForSelectedRows
-            
-            let categorieSelection = arrayCategories[indexPath.row]
-            
-            let objVDestination = segue.destination as! PlatsTableViewController
-            objVDestination.parametre1 = categorieSelection
+            if let indexPath = self.tableCategorie.indexPathForSelectedRow{
+                let categorieSelection = arrayCategories[indexPath.row]
+                let objVDestination = segue.destination as! PlatsTableViewController
+                objVDestination.parametre1 = categorieSelection
+            }
         }
     }
 }
