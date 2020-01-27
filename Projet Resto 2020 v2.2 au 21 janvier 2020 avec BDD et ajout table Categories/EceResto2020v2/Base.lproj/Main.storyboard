@@ -320,6 +320,9 @@
                                                     <state key="normal" title="Favoris" backgroundImage="v6_barre_titre">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="ajoutFavoris:" destination="ht7-3J-7Tr" eventType="touchUpInside" id="bg2-4S-HoI"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-v3-Clc">
                                                     <rect key="frame" x="224" y="26" width="110" height="30"/>
@@ -330,6 +333,9 @@
                                                     <state key="normal" title="Commander" backgroundImage="v6_barre_titre">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="commander:" destination="ht7-3J-7Tr" eventType="touchUpInside" id="LsQ-qh-BGj"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -395,8 +401,76 @@
                             <outlet property="delegate" destination="ht7-3J-7Tr" id="wm5-gs-X34"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="descP" destination="wLe-gt-Vb2" id="tx6-jq-1ka"/>
+                        <outlet property="imageP" destination="nQZ-nW-JRm" id="RE8-ea-9sr"/>
+                        <outlet property="nomP" destination="7hc-DK-9hS" id="ljA-eY-O1q"/>
+                        <outlet property="prixP" destination="2Dk-QJ-5Vf" id="kNl-Yg-gdA"/>
+                        <outlet property="quantitePlats" destination="wqz-bt-UQy" id="fD1-4L-1h6"/>
+                        <outlet property="viewContainer" destination="1M7-rS-dmP" id="7qL-Yq-SDe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nid-c3-xbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="1M7-rS-dmP">
+                    <rect key="frame" x="0.0" y="0.0" width="277" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v6_barre_titre" translatesAutoresizingMaskIntoConstraints="NO" id="86k-vM-37T">
+                            <rect key="frame" x="0.0" y="0.0" width="277" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ajout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-lg-mg6">
+                            <rect key="frame" x="117" y="10" width="40" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v2_barre_titre" translatesAutoresizingMaskIntoConstraints="NO" id="Erm-cx-8fW">
+                            <rect key="frame" x="0.0" y="97" width="277" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQE-7b-gBL">
+                            <rect key="frame" x="117" y="102" width="53" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lI-FB-rfX">
+                            <rect key="frame" x="216" y="49" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="augmenterQuantite:" destination="ht7-3J-7Tr" eventType="touchUpInside" id="6aZ-cd-2uI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqz-bt-UQy">
+                            <rect key="frame" x="130" y="51" width="27" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-pA-vAs">
+                            <rect key="frame" x="16" y="49" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="-">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="diminuerQuantité:" destination="ht7-3J-7Tr" eventType="touchUpInside" id="VKY-YI-cAO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <viewLayoutGuide key="safeArea" id="n0C-6z-HPR"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="3208.8000000000002" y="357.57121439280365"/>
         </scene>
@@ -570,6 +644,7 @@
         <image name="v1_ico3" width="22.5" height="22"/>
         <image name="v1_ico4" width="19.5" height="22"/>
         <image name="v1_menu" width="91" height="24.5"/>
+        <image name="v2_barre_titre" width="320" height="64"/>
         <image name="v5_cheff" width="95" height="26.5"/>
         <image name="v5_fond" width="320" height="524"/>
         <image name="v5_img1" width="264.5" height="399"/>
