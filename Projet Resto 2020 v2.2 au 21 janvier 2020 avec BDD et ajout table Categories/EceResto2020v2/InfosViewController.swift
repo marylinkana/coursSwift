@@ -10,10 +10,19 @@ import UIKit
 
 class InfosViewController: UIViewController {
 
+    @IBOutlet var viewContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let rotation = -CGFloat.pi/30.0
+        let transform = viewContainer.transform
+        let rotated = transform.rotated(by: rotation)
+        self.viewContainer.transform = rotated
     }
     
 
