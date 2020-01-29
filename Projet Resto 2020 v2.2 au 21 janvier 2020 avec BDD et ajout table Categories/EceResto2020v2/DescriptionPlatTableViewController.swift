@@ -9,16 +9,17 @@
 import UIKit
 
 class DescriptionPlatTableViewController: UITableViewController {
+    
     // ajoug de produit
     var quantitePlat:Int!
     @IBOutlet var viewContainer: UIView!
+    @IBOutlet var quantitePlatsLabel: UILabel!
     @IBAction func diminuerQuantite(_ sender: Any) {
     }
     @IBAction func augmenterQuantite(_ sender: Any) {
     }
-    @IBOutlet var quantitePlatsLabel: UILabel!
     
-    var paramettres2 = [String:String]()
+    var parametres2 = [String:String]()
     
     @IBOutlet var imageP: UIImageView!
     @IBOutlet var nomP: UILabel!
@@ -27,14 +28,21 @@ class DescriptionPlatTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let logo = UIImage(named: "v2_logo")
+        self.navigationItem.titleView = UIImageView(image:logo)
+        
         quantitePlat = 1
         quantitePlatsLabel.text = "\(quantitePlat)"
         
         
         //valeur de départ
-        nomP.text = paramettres2["nom_plat"]
-        prixP.text = paramettres2["prix_plat"]
-        descP.text = paramettres2["desc_plat"]
+        nomP.text = parametres2["nom_plat"]
+        prixP.text = parametres2["prix_plat"]
+        descP.text = parametres2["desc_plat"]
+        if let nomImg = parametres2["archive_plat"]{
+            imageP.image = UIImage(named : nomImg)
+        }
         //imageP.image = UIImage(named: archiveP)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,22 +55,22 @@ class DescriptionPlatTableViewController: UITableViewController {
     }
     
     @IBAction func commander(_ sender: Any) {
-        viewContainer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        //viewContainer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         viewContainer.center = view.center
         self.view.addSubview(viewContainer)
     }
-    
+    /*
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

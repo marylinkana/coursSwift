@@ -17,7 +17,7 @@ class PlatsTableViewController: UITableViewController {
         super.viewDidLoad()
         // Afficher la navbar de la fonction confNavBar
         confNavBar()
-        
+                
         // Accès à la table Plats
         if let idCategorie = parametre1["id_categorie"]{
             //        arrayPlats = DataBase().executerSelect("SELECT * FROM plats_nourriture WHERE id_categorie = \(idCategorie)") as! [[String : String]]
@@ -123,14 +123,24 @@ class PlatsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "plats2description"{
+            
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let objetPlat = self.arrayPlats[indexPath.row]
+                //segue vers DescriptionPlatTableViewController
+                let objVDescription = segue.destination as! DescriptionPlatTableViewController
+                objVDescription.parametres2 = objetPlat
+            }
+
+        }
     }
-    */
+    
 
 }
