@@ -49,9 +49,16 @@ class DescriptionPlatTableViewController: UITableViewController {
     }
     
     @IBAction func diminuerQuantite(_ sender: Any) {
+        if quantitePlat > 0 {
+            quantitePlat = quantitePlat - 1
+        }
+        quantitePlatsLabel.text = "\(quantitePlat!)"
     }
     
     @IBAction func ajouterQuantite(_ sender: Any) {
+        quantitePlat = quantitePlat + 1
+        quantitePlatsLabel.text = "\(quantitePlat!)"
+
     }
     
     @IBAction func ajoutFavoris(_ sender: Any) {
