@@ -9,8 +9,10 @@
 import UIKit
 
 class CommandesViewController: UIViewController {
-
-    var arraysPlatCommandes = [[String:String]]()
+    
+    var dao = DataBase()
+    
+    var arrayPlatCommandes = [[String:String]]()
     
     @IBOutlet var tableViewCommandes: UITableView!
     @IBOutlet var mntantTotalLabel: UILabel!
@@ -19,6 +21,12 @@ class CommandesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let dataCommande = dao.executerSelect("select * from commande order by id_commande desc") as! [[String:String]]
+        print(arrayPlatCommandes)
+        //print(dataCommande!)
     }
     
     @IBAction func passerCommande(_ sender: Any) {
@@ -31,11 +39,16 @@ class CommandesViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, numbresOfRowsInSection section: Int) -> Int{
-            return 10
+            return arrayPlatCommandes.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCommandes", for: indexPath) as! CommandesTableViewCell
+            
+            cell.nomCell.text = arrayPlatCommandes[indexPath.row]["nom_plat"]
+            cell.quantiteCell.text = arrayPlatCommandes[indexPath.row]["quantite_plat"]
+            cell.prixUnitCell.text = arrayPlatCommandes[indexPath.row]["prix_plat"]
+
             return cell
         }
     }

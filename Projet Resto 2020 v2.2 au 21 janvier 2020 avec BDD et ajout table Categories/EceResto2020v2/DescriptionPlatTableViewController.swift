@@ -91,8 +91,8 @@ class DescriptionPlatTableViewController: UITableViewController {
             dao.executerInsert(insertCommande)
     }
         
-        let dataCommande = dao.executerInsert("select * from commande")
-        print(dataCommande)
+        let dataCommande = dao.executerSelect("select * from commande")
+        print(dataCommande!)
     }
     
     
