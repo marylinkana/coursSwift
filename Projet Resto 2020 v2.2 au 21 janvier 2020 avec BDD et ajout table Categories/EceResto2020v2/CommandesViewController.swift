@@ -10,6 +10,8 @@ import UIKit
 
 class CommandesViewController: UIViewController {
 
+    var arraysPlatCommandes = [[String:String]]()
+    
     @IBOutlet var tableViewCommandes: UITableView!
     @IBOutlet var mntantTotalLabel: UILabel!
     
@@ -21,7 +23,22 @@ class CommandesViewController: UIViewController {
     
     @IBAction func passerCommande(_ sender: Any) {
     }
+}
     
+    extension CommandesViewController{
+        func nombreDeSections(un tableView: UITableView) -> Int{
+            return 1
+        }
+        
+        func tableView(_ tableView: UITableView, numbresOfRowsInSection section: Int) -> Int{
+            return 10
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellCommandes", for: indexPath) as! CommandesTableViewCell
+            return cell
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -32,4 +49,3 @@ class CommandesViewController: UIViewController {
     }
     */
 
-}

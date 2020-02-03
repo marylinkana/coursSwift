@@ -692,14 +692,20 @@
                                                 <constraint firstItem="o7e-7U-F5h" firstAttribute="top" secondItem="mjq-nG-gkQ" secondAttribute="top" id="BwT-kY-xez"/>
                                                 <constraint firstItem="mjq-nG-gkQ" firstAttribute="leading" secondItem="hOi-Bu-C9u" secondAttribute="leading" constant="41" id="EE5-8T-VIf"/>
                                                 <constraint firstItem="pyN-Px-tOc" firstAttribute="leading" secondItem="hOi-Bu-C9u" secondAttribute="leadingMargin" constant="30" id="GTd-LN-vQS"/>
-                                                <constraint firstItem="o7e-7U-F5h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mjq-nG-gkQ" secondAttribute="trailing" symbolic="YES" id="iz8-7a-hgt"/>
-                                                <constraint firstItem="5WN-dL-x0Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zxW-0g-Tgw" secondAttribute="trailing" symbolic="YES" id="o1U-B5-9XG"/>
+                                                <constraint firstItem="o7e-7U-F5h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mjq-nG-gkQ" secondAttribute="trailing" constant="8" symbolic="YES" id="iz8-7a-hgt"/>
+                                                <constraint firstItem="5WN-dL-x0Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zxW-0g-Tgw" secondAttribute="trailing" constant="8" symbolic="YES" id="o1U-B5-9XG"/>
                                                 <constraint firstItem="pyN-Px-tOc" firstAttribute="top" secondItem="o7e-7U-F5h" secondAttribute="bottom" constant="7" id="pH2-hY-2Rm"/>
                                                 <constraint firstItem="o7e-7U-F5h" firstAttribute="top" secondItem="hOi-Bu-C9u" secondAttribute="topMargin" id="rfJ-LL-KwT"/>
                                                 <constraint firstItem="o7e-7U-F5h" firstAttribute="firstBaseline" secondItem="5WN-dL-x0Q" secondAttribute="baseline" id="txM-SU-byF"/>
                                                 <constraint firstItem="o7e-7U-F5h" firstAttribute="baseline" secondItem="mjq-nG-gkQ" secondAttribute="firstBaseline" id="wdD-bk-XAd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nomCell" destination="o7e-7U-F5h" id="H36-u2-j6k"/>
+                                            <outlet property="prixTotalCell" destination="5WN-dL-x0Q" id="tNZ-aV-HUD"/>
+                                            <outlet property="prixUnitCell" destination="zxW-0g-Tgw" id="hj6-37-5PS"/>
+                                            <outlet property="quantiteCell" destination="mjq-nG-gkQ" id="wmJ-pT-kwd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

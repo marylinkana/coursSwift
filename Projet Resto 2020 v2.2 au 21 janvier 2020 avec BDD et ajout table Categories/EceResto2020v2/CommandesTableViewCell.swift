@@ -1,5 +1,5 @@
 //
-//  CommandeTableViewCell.swift
+//  CommandesTableViewCell.swift
 //  EceResto2020v2
 //
 //  Created by Administrateur on 03/02/2020.
@@ -10,6 +10,11 @@ import UIKit
 
 class CommandesTableViewCell: UITableViewCell {
 
+    @IBOutlet var quantiteCell: UILabel!
+    @IBOutlet var nomCell: UILabel!
+    @IBOutlet var prixUnitCell: UILabel!
+    @IBOutlet var prixTotalCell: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
