@@ -21,6 +21,8 @@
 		81DC203323D745A50066E556 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DC203023D745A50066E556 /* DataBase.m */; };
 		81DC203723D747740066E556 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DC203623D747730066E556 /* libsqlite3.tbd */; };
 		B45F75F923E86F6B008B946E /* PlatsBD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B45F75F823E86F6B008B946E /* PlatsBD.sqlite */; };
+		B45F75FB23E88911008B946E /* CommandesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F75FA23E88911008B946E /* CommandesViewController.swift */; };
+		B489D08F23E88AE600A369DF /* CommandesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B489D08E23E88AE600A369DF /* CommandesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		81DC203223D745A50066E556 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		81DC203623D747730066E556 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B45F75F823E86F6B008B946E /* PlatsBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlatsBD.sqlite; sourceTree = "<group>"; };
+		B45F75FA23E88911008B946E /* CommandesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandesViewController.swift; sourceTree = "<group>"; };
+		B489D08E23E88AE600A369DF /* CommandesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				816762BC23C5C4E3006100CA /* FirstViewController.swift */,
 				816762BE23C5C4E3006100CA /* SecondViewController.swift */,
 				816762C023C5C4E3006100CA /* Main.storyboard */,
+				B489D08E23E88AE600A369DF /* CommandesTableViewCell.swift */,
+				B45F75FA23E88911008B946E /* CommandesViewController.swift */,
 				813C36AE23D5AC4400D7EF3C /* CustomCellPlatsTableViewCell.swift */,
 				816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */,
 				8123C7E523CC73F200B558FF /* PlatsTableViewController.swift */,
@@ -177,10 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B489D08F23E88AE600A369DF /* CommandesTableViewCell.swift in Sources */,
 				816762BF23C5C4E3006100CA /* SecondViewController.swift in Sources */,
 				81DC202E23D7335B0066E556 /* DescriptionPlatTableViewController.swift in Sources */,
 				81DC203323D745A50066E556 /* DataBase.m in Sources */,
 				816762CF23C5EBA7006100CA /* CategorieTableViewCell.swift in Sources */,
+				B45F75FB23E88911008B946E /* CommandesViewController.swift in Sources */,
 				8123C7E623CC73F200B558FF /* PlatsTableViewController.swift in Sources */,
 				813C36AF23D5AC4400D7EF3C /* CustomCellPlatsTableViewCell.swift in Sources */,
 				816762BB23C5C4E3006100CA /* AppDelegate.swift in Sources */,
