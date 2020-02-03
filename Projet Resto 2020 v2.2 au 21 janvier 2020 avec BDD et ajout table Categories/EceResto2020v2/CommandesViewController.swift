@@ -48,6 +48,9 @@ class CommandesViewController: UIViewController {
             cell.nomCell.text = arrayPlatCommandes[indexPath.row]["nom_plat"]
             cell.quantiteCell.text = arrayPlatCommandes[indexPath.row]["quantite_plat"]
             cell.prixUnitCell.text = arrayPlatCommandes[indexPath.row]["prix_plat"]
+            
+            let semitot = cell.calculSousTotal()
+            cell.prixTotalCell.text = "\(semitot)"
 
             return cell
         }

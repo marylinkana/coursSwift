@@ -88,6 +88,7 @@
 				816762BE23C5C4E3006100CA /* SecondViewController.swift */,
 				816762C023C5C4E3006100CA /* Main.storyboard */,
 				B45F75FA23E88911008B946E /* CommandesViewController.swift */,
+				B489D09223E891B300A369DF /* CommandesTableViewCell.swift */,
 				813C36AE23D5AC4400D7EF3C /* CustomCellPlatsTableViewCell.swift */,
 				816762CE23C5EBA7006100CA /* CategorieTableViewCell.swift */,
 				8123C7E523CC73F200B558FF /* PlatsTableViewController.swift */,
@@ -97,7 +98,6 @@
 				81DC202D23D7335B0066E556 /* DescriptionPlatTableViewController.swift */,
 				81DC202F23D745A40066E556 /* EceResto2020v2-Bridging-Header.h */,
 				81D1DB8F23DED1E3004D28EB /* InfosViewController.swift */,
-				B489D09223E891B300A369DF /* CommandesTableViewCell.swift */,
 			);
 			path = EceResto2020v2;
 			sourceTree = "<group>";

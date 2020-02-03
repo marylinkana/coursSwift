@@ -25,5 +25,17 @@ class CommandesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    func calculSousTotal()->Float{
+        let qte = quantiteCell.text
+        let qteNum = Float(qte!)
+        
+        let prixUnit = prixUnitCell.text
+        let prixNum = Float(prixUnit!)
+        
+        let sousTotal = qteNum! * prixNum!
+        return sousTotal
+    }
 
 }
