@@ -25,11 +25,32 @@ class CommandesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         let dataCommande = dao.executerSelect("select * from commande order by id_commande desc") as! [[String:String]]
+        tableViewCommandes.reloadData()
         print(arrayPlatCommandes)
         //print(dataCommande!)
     }
     
     @IBAction func passerCommande(_ sender: Any) {
+        
+    }
+    
+    func calculTotal()->Float{
+        
+        var total:Float = 0.0
+        
+        for obj in arrayPlatCommandes{
+            let qte = quantiteCell.text
+            let qteNum = Float(qte!)
+            
+            let prixUnit = prixUnitCell.text
+            let prixNum = Float(prixUnit!)
+            
+            let sousTotal = qteNum! * prixNum!
+            return sousTotal
+        }
+        
+        return total
+
     }
 }
     
