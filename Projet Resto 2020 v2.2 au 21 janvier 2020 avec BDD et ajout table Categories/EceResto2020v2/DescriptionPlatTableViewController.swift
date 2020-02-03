@@ -10,6 +10,8 @@ import UIKit
 
 class DescriptionPlatTableViewController: UITableViewController {
     
+    @IBOutlet var blurEffect: UIVisualEffectView!
+    
     // Ajout de produits
     var quantitePlat:Int!
     @IBOutlet var viewContainer: UIView!
@@ -66,9 +68,18 @@ class DescriptionPlatTableViewController: UITableViewController {
     
     @IBAction func commander(_ sender: Any) {
         // viewContainer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        blurEffect.frame = view.frame
+        // effet flout au clic sur le bouton commander
+        self.view.addSubview(blurEffect)
         viewContainer.center = view.center
         self.view.addSubview(viewContainer)
     }
+    
+    @IBAction func validerCommande(_ sender: Any) {
+        blurEffect.removeFromSuperview()
+        viewContainer.removeFromSuperview()
+    }
+    
     
     // MARK: - Table view data source
     /*

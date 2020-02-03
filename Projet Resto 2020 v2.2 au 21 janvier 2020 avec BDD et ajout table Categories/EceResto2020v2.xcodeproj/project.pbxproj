@@ -20,7 +20,7 @@
 		81DC202E23D7335B0066E556 /* DescriptionPlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC202D23D7335B0066E556 /* DescriptionPlatTableViewController.swift */; };
 		81DC203323D745A50066E556 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DC203023D745A50066E556 /* DataBase.m */; };
 		81DC203723D747740066E556 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DC203623D747730066E556 /* libsqlite3.tbd */; };
-		81DC203B23D752320066E556 /* PlatsBD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 81DC203A23D752320066E556 /* PlatsBD.sqlite */; };
+		B45F75F923E86F6B008B946E /* PlatsBD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B45F75F823E86F6B008B946E /* PlatsBD.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		81DC203023D745A50066E556 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 		81DC203223D745A50066E556 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		81DC203623D747730066E556 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		81DC203A23D752320066E556 /* PlatsBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlatsBD.sqlite; sourceTree = "<group>"; };
+		B45F75F823E86F6B008B946E /* PlatsBD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlatsBD.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			children = (
 				81DC203223D745A50066E556 /* DataBase.h */,
 				81DC203023D745A50066E556 /* DataBase.m */,
-				81DC203A23D752320066E556 /* PlatsBD.sqlite */,
+				B45F75F823E86F6B008B946E /* PlatsBD.sqlite */,
 				816762BA23C5C4E3006100CA /* AppDelegate.swift */,
 				816762BC23C5C4E3006100CA /* FirstViewController.swift */,
 				816762BE23C5C4E3006100CA /* SecondViewController.swift */,
@@ -163,7 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DC203B23D752320066E556 /* PlatsBD.sqlite in Resources */,
+				B45F75F923E86F6B008B946E /* PlatsBD.sqlite in Resources */,
 				816762C723C5C4E5006100CA /* LaunchScreen.storyboard in Resources */,
 				816762C423C5C4E5006100CA /* Assets.xcassets in Resources */,
 				816762C223C5C4E3006100CA /* Main.storyboard in Resources */,

@@ -11,9 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     var number:Double = 0;
-    var prevNumber:Double = 0;
-    var math = false
+    
     var oper = 0;
+
+    var prevNumber:Double = 0;
+    
+    var math = false
+
 
     @IBOutlet var label: UILabel!
     
@@ -35,23 +39,18 @@ class ViewController: UIViewController {
             
             prevNumber = Double(label.text!)!
             
-            //div
             if sender.tag == 12{
                 label.text = "/";
             }
-            //mult
             else if sender.tag == 13{
                 label.text = "x";
             }
-            //subs
             else if sender.tag == 14{
                 label.text = "+";
             }
-            //addition
             else if sender.tag == 15{
                 label.text = "-";
             }
-            //modulo
             else if sender.tag == 17{
                 label.text = "%";
             }
