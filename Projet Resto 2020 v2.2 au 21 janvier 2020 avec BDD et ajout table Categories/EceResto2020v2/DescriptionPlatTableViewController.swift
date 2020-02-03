@@ -89,7 +89,7 @@ class DescriptionPlatTableViewController: UITableViewController {
             //on insert les donnée dans la table commande de la base de donnée
             let insertCommande = "insert into commande (nom_plat, prix_unit, quantite_plat) value ('\(nomPlat!)','\(prixPlat!)','\(quantite)'"
             dao.executerInsert(insertCommande)
-        }
+    }
         
         let dataCommande = dao.executerInsert("select * from commande")
         print(dataCommande)
