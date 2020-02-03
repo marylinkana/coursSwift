@@ -10,6 +10,10 @@ import UIKit
 
 class DescriptionPlatTableViewController: UITableViewController {
     
+    //connexion Bdd
+    let dao = DataBase()
+    
+    //effet visuel flouté
     @IBOutlet var blurEffect: UIVisualEffectView!
     
     // Ajout de produits
@@ -78,6 +82,17 @@ class DescriptionPlatTableViewController: UITableViewController {
     @IBAction func validerCommande(_ sender: Any) {
         blurEffect.removeFromSuperview()
         viewContainer.removeFromSuperview()
+        
+        let nomPlat = nomP.text
+        let prixPlat = prixP.text
+        if let quantite = quantitePlat {
+            //on insert les donnée dans la table commande de la base de donnée
+            let insertCommande = "insert into commande (nom_plat, prix_unit, quantite_plat) value ('\(nomPlat!)','\(prixPlat!)','\(quantite)'"
+            dao.executerInsert(insertCommande)
+        }
+        
+        let dataCommande = dao.executerInsert("select * from commande")
+        print(dataCommande)
     }
     
     
