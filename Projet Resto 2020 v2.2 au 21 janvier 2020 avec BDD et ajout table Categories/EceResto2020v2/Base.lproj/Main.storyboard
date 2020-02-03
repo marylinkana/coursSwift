@@ -520,14 +520,76 @@
                     <view key="view" contentMode="scaleToFill" id="pAU-wJ-SHi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-pO-SRh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ECEATS" translatesAutoresizingMaskIntoConstraints="NO" id="xrN-OD-h9v">
+                                        <rect key="frame" x="130" y="0.0" width="155" height="139"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="139" id="aJj-Wo-Xut"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="xrN-OD-h9v" firstAttribute="leading" secondItem="MCo-pO-SRh" secondAttribute="leading" constant="130" id="9Vn-Ub-RHd"/>
+                                    <constraint firstItem="xrN-OD-h9v" firstAttribute="top" secondItem="MCo-pO-SRh" secondAttribute="top" id="Sve-bU-QoO"/>
+                                    <constraint firstAttribute="height" constant="128" id="f6x-oG-cjZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xrN-OD-h9v" secondAttribute="trailing" constant="129" id="p8J-7d-liR"/>
+                                    <constraint firstAttribute="bottom" secondItem="xrN-OD-h9v" secondAttribute="bottom" constant="-11" id="r67-Lx-Cug"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yce-kS-dtX">
+                                <rect key="frame" x="0.0" y="136" width="414" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qté. !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wba-Wr-2yN">
+                                        <rect key="frame" x="8" y="24" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PU !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13q-Sd-LEA">
+                                        <rect key="frame" x="278" y="24" width="32" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Y-RM-Wh2">
+                                        <rect key="frame" x="351" y="24" width="38" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plat !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puC-A9-qr1">
+                                        <rect key="frame" x="79" y="24" width="39" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2Z-TE-BGA" firstAttribute="bottom" secondItem="MCo-pO-SRh" secondAttribute="bottom" constant="559" id="S3v-Nx-QwV"/>
+                            <constraint firstItem="MCo-pO-SRh" firstAttribute="trailing" secondItem="K2Z-TE-BGA" secondAttribute="trailing" id="Sa5-UR-qUT"/>
+                            <constraint firstItem="MCo-pO-SRh" firstAttribute="leading" secondItem="K2Z-TE-BGA" secondAttribute="leading" id="dry-Rl-b9K"/>
+                            <constraint firstItem="MCo-pO-SRh" firstAttribute="top" secondItem="K2Z-TE-BGA" secondAttribute="top" id="fUT-lT-pcs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K2Z-TE-BGA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Panier" image="v1_ico3" id="mgx-zx-pmZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJI-nZ-3J6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="1039"/>
+            <point key="canvasLocation" x="740.57971014492762" y="1038.5869565217392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -689,6 +751,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ECEATS" width="500" height="500"/>
         <image name="ajidegallina" width="800" height="600"/>
         <image name="salade1" width="280" height="180"/>
         <image name="v0_fondcomplet1-1" width="320" height="568"/>
