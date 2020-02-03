@@ -10,13 +10,18 @@ import UIKit
 
 class CommandesViewController: UIViewController {
 
+    @IBOutlet var tableViewCommandes: UITableView!
+    @IBOutlet var mntantTotalLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func passerCommande(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -597,6 +597,9 @@
                                         <state key="normal" title="Valider la commande">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="passerCommande:" destination="B6E-eX-BN6" eventType="touchUpInside" id="Aaj-6L-9DY"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEh-CY-IPC">
                                         <rect key="frame" x="290" y="19" width="124" height="30"/>
@@ -642,7 +645,7 @@
                                     <constraint firstAttribute="height" constant="391" id="scs-ih-ayk"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZE8-5t-cTR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCommande" id="ZE8-5t-cTR" customClass="CommandesTableViewCell" customModule="EceResto2020v2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZE8-5t-cTR" id="hOi-Bu-C9u">
@@ -699,6 +702,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="B6E-eX-BN6" id="EKm-Ah-7Hb"/>
+                                    <outlet property="delegate" destination="B6E-eX-BN6" id="i8b-o4-mh2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -722,6 +729,10 @@
                         <viewLayoutGuide key="safeArea" id="K2Z-TE-BGA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Panier" image="v1_ico3" id="mgx-zx-pmZ"/>
+                    <connections>
+                        <outlet property="mntantTotalLabel" destination="tEh-CY-IPC" id="ogN-cY-CQN"/>
+                        <outlet property="tableViewCommandes" destination="QpK-AX-bKB" id="SsP-DY-5gl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJI-nZ-3J6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
